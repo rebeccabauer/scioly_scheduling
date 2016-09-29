@@ -1,0 +1,35 @@
+# @ = study, ! = build/lab
+# C/B
+@Anatomy and Physiology;Emily,Melissa,Alexander,Nikesh,Derek,Nikita,Usha
+@Astronomy;Bella,Matt,Gill
+!Chem Lab;Ameen,Melissa,Alexander,Siddu,David Leitner
+@Disease Detectives;Jay,Emily,Siddu,Scott,Aayan,Ceci,Charlene
+@Dynamic Planet;David S.,Ian,Alexander,Luke,Sandeep,Gill
+@Ecology;Melissa,Bella,Nikesh,Alexander,Jessica,Nikita,Usha
+!Electric Vehicle;Matt,Vivek,Nikesh,Archit,Jim
+!Experimental Design;Nikolai,Melissa,Emily,Alex,Harsha,Jessica,Jim
+!Forensics;Julia,Lauren,Emhyr,none
+!Game On;Julia,Nikolai,Corbin,David B.,none
+!Helicopters;Nikolai,Ian,David B.,none
+@Hovercraft;Julia,Alex,Darsh,none
+@Hydrogeology;Michelle,Bella,Gill
+@Invasive Species;Michelle,Lauren,Archit,Emhyr,Laxmikanta
+@Material Science;Ian,Michelle,Emhyr,David B.,David Leitner
+@Microbe Mission;Lauren,Ameen,Nikesh,Siddu,Ceci,Aayan,Steve
+@Optics;Matt,Jay,Corbin,Nikita,Derek,Bruno
+@Remote Sensing;Matt,David S.,Gill
+!Robot Arm;David S.,Julia,Scott,Archit,Jim
+@Rocks and Minerals;Ameen,Jay,Scott,Corbin,Sandeep,Alex,Charlene
+!Towers;Brandon,Vivek,David B.,Archit,Ellie,Darion,Kash
+!Wind Power;Vivek,Brandon,Scott,Rahul,Sandeep,Venkat
+!Write It Do It;Michelle,Brandon,Corbin,Siddu,Darion,Ellie,none
+
+# B ONLY
+!Bottle Rocket;Darion,Harsha,Kash
+@Fast Facts;Elyse,Jessica,Media
+@Food Science;Derek,Darion,Media
+@Meteorology;Luke,Darsh,Bahar
+!Mission Possible;Rahul,Sandeep,Venkat
+@Road Scholar;Nikita,Elyse,Gill
+!Scrambler;Harsha,Darsh,Bahar
+!Wright Stuff;Rahul,Ceci,none

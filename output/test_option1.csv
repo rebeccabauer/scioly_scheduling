@@ -1,0 +1,78 @@
+Option 1
+Conflict Score:,5.9000000000000004
+
+...
+Shift 0:
+Conflict Summary:
+Student Conflicts,Coach Conflicts,Total
+0,0,0
+
+Students with conflicts:
+Coaches with conflicts:
+
+Event Name,Coach,Students
+Experimental Design,Jim,"Nikolai, Melissa, Emily, Alex, Harsha, Jessica"
+Towers,Kash,"Brandon, Vivek, David B., Archit, Ellie, Darion"
+Microbe Mission,Steve,"Lauren, Ameen, Nikesh, Siddu, Ceci, Aayan"
+Dynamic Planet,Gill,"David S., Ian, Alexander, Luke, Sandeep"
+Optics,Bruno,"Matt, Jay, Corbin, Nikita, Derek"
+
+...
+Shift 1:
+Conflict Summary:
+Student Conflicts,Coach Conflicts,Total
+3,0,3
+
+Students with conflicts:,Corbin,Scott,Michelle
+Coaches with conflicts:
+
+Event Name,Coach,Students
+Write It Do It,,"Michelle, Brandon, Corbin, Siddu, Darion, Ellie"
+Rocks and Minerals,Charlene,"Ameen, Jay, Scott, Corbin, Sandeep, Alex"
+Anatomy and Physiology,Usha,"Emily, Melissa, Alexander, Nikesh, Derek, Nikita"
+Robot Arm,Jim,"David S., Julia, Scott, Archit"
+Material Science,David Leitner,"Ian, Michelle, Emhyr, David B."
+Wright Stuff,,"Rahul, Ceci"
+Scrambler,Bahar,"Harsha, Darsh"
+Fast Facts,Media,"Elyse, Jessica"
+Astronomy,Gill,"Bella, Matt"
+
+...
+Shift 2:
+Conflict Summary:
+Student Conflicts,Coach Conflicts,Total
+1,0,1
+
+Students with conflicts:,Julia
+Coaches with conflicts:
+
+Event Name,Coach,Students
+Wind Power,Venkat,"Vivek, Brandon, Scott, Rahul, Sandeep"
+Ecology,Usha,"Melissa, Bella, Nikesh, Alexander, Jessica, Nikita"
+Game On,,"Julia, Nikolai, Corbin, David B."
+Invasive Species,Laxmikanta,"Michelle, Lauren, Archit, Emhyr"
+Bottle Rocket,Kash,"Darion, Harsha"
+Hovercraft,,"Julia, Alex, Darsh"
+Remote Sensing,Gill,"Matt, David S."
+
+...
+Shift 3:
+Conflict Summary:
+Student Conflicts,Coach Conflicts,Total
+1,1,2
+
+Students with conflicts:,Siddu
+Coaches with conflicts:,Gill
+
+Event Name,Coach,Students
+Disease Detectives,Charlene,"Jay, Emily, Siddu, Scott, Aayan, Ceci"
+Electric Vehicle,Jim,"Matt, Vivek, Nikesh, Archit"
+Chem Lab,David Leitner,"Ameen, Melissa, Alexander, Siddu"
+Helicopters,,"Nikolai, Ian, David B."
+Forensics,,"Julia, Lauren, Emhyr"
+Mission Possible,Venkat,"Rahul, Sandeep"
+Hydrogeology,Gill,"Michelle, Bella"
+Meteorology,Bahar,"Luke, Darsh"
+Road Scholar,Gill,"Nikita, Elyse"
+Food Science,Media,"Derek, Darion"
+

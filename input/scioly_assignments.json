@@ -1,0 +1,306 @@
+{
+    "Anatomy and Physiology": {
+        "build_event": false, 
+        "coach": "Usha", 
+        "kids": [
+            "Emily", 
+            "Melissa", 
+            "Alexander", 
+            "Nikesh", 
+            "Derek", 
+            "Nikita"
+        ]
+    }, 
+    "Astronomy": {
+        "build_event": false, 
+        "coach": "Gill", 
+        "kids": [
+            "Bella", 
+            "Matt"
+        ]
+    }, 
+    "Bottle Rocket": {
+        "build_event": true, 
+        "coach": "Kash", 
+        "kids": [
+            "Darion", 
+            "Harsha"
+        ]
+    }, 
+    "Chem Lab": {
+        "build_event": true, 
+        "coach": "David Leitner", 
+        "kids": [
+            "Ameen", 
+            "Melissa", 
+            "Alexander", 
+            "Siddu"
+        ]
+    }, 
+    "Disease Detectives": {
+        "build_event": false, 
+        "coach": "Charlene", 
+        "kids": [
+            "Jay", 
+            "Emily", 
+            "Siddu", 
+            "Scott", 
+            "Aayan", 
+            "Ceci"
+        ]
+    }, 
+    "Dynamic Planet": {
+        "build_event": false, 
+        "coach": "Gill", 
+        "kids": [
+            "David S.", 
+            "Ian", 
+            "Alexander", 
+            "Luke", 
+            "Sandeep"
+        ]
+    }, 
+    "Ecology": {
+        "build_event": false, 
+        "coach": "Usha", 
+        "kids": [
+            "Melissa", 
+            "Bella", 
+            "Nikesh", 
+            "Alexander", 
+            "Jessica", 
+            "Nikita"
+        ]
+    }, 
+    "Electric Vehicle": {
+        "build_event": true, 
+        "coach": "Jim", 
+        "kids": [
+            "Matt", 
+            "Vivek", 
+            "Nikesh", 
+            "Archit"
+        ]
+    }, 
+    "Experimental Design": {
+        "build_event": true, 
+        "coach": "Jim", 
+        "kids": [
+            "Nikolai", 
+            "Melissa", 
+            "Emily", 
+            "Alex", 
+            "Harsha", 
+            "Jessica"
+        ]
+    }, 
+    "Fast Facts": {
+        "build_event": false, 
+        "coach": "Media", 
+        "kids": [
+            "Elyse", 
+            "Jessica"
+        ]
+    }, 
+    "Food Science": {
+        "build_event": false, 
+        "coach": "Media", 
+        "kids": [
+            "Derek", 
+            "Darion"
+        ]
+    }, 
+    "Forensics": {
+        "build_event": true, 
+        "coach": null, 
+        "kids": [
+            "Julia", 
+            "Lauren", 
+            "Emhyr"
+        ]
+    }, 
+    "Game On": {
+        "build_event": true, 
+        "coach": null, 
+        "kids": [
+            "Julia", 
+            "Nikolai", 
+            "Corbin", 
+            "David B."
+        ]
+    }, 
+    "Helicopters": {
+        "build_event": true, 
+        "coach": null, 
+        "kids": [
+            "Nikolai", 
+            "Ian", 
+            "David B."
+        ]
+    }, 
+    "Hovercraft": {
+        "build_event": false, 
+        "coach": null, 
+        "kids": [
+            "Julia", 
+            "Alex", 
+            "Darsh"
+        ]
+    }, 
+    "Hydrogeology": {
+        "build_event": false, 
+        "coach": "Gill", 
+        "kids": [
+            "Michelle", 
+            "Bella"
+        ]
+    }, 
+    "Invasive Species": {
+        "build_event": false, 
+        "coach": "Laxmikanta", 
+        "kids": [
+            "Michelle", 
+            "Lauren", 
+            "Archit", 
+            "Emhyr"
+        ]
+    }, 
+    "Material Science": {
+        "build_event": false, 
+        "coach": "David Leitner", 
+        "kids": [
+            "Ian", 
+            "Michelle", 
+            "Emhyr", 
+            "David B."
+        ]
+    }, 
+    "Meteorology": {
+        "build_event": false, 
+        "coach": "Bahar", 
+        "kids": [
+            "Luke", 
+            "Darsh"
+        ]
+    }, 
+    "Microbe Mission": {
+        "build_event": false, 
+        "coach": "Steve", 
+        "kids": [
+            "Lauren", 
+            "Ameen", 
+            "Nikesh", 
+            "Siddu", 
+            "Ceci", 
+            "Aayan"
+        ]
+    }, 
+    "Mission Possible": {
+        "build_event": true, 
+        "coach": "Venkat", 
+        "kids": [
+            "Rahul", 
+            "Sandeep"
+        ]
+    }, 
+    "Optics": {
+        "build_event": false, 
+        "coach": "Bruno", 
+        "kids": [
+            "Matt", 
+            "Jay", 
+            "Corbin", 
+            "Nikita", 
+            "Derek"
+        ]
+    }, 
+    "Remote Sensing": {
+        "build_event": false, 
+        "coach": "Gill", 
+        "kids": [
+            "Matt", 
+            "David S."
+        ]
+    }, 
+    "Road Scholar": {
+        "build_event": false, 
+        "coach": "Gill", 
+        "kids": [
+            "Nikita", 
+            "Elyse"
+        ]
+    }, 
+    "Robot Arm": {
+        "build_event": true, 
+        "coach": "Jim", 
+        "kids": [
+            "David S.", 
+            "Julia", 
+            "Scott", 
+            "Archit"
+        ]
+    }, 
+    "Rocks and Minerals": {
+        "build_event": false, 
+        "coach": "Charlene", 
+        "kids": [
+            "Ameen", 
+            "Jay", 
+            "Scott", 
+            "Corbin", 
+            "Sandeep", 
+            "Alex"
+        ]
+    }, 
+    "Scrambler": {
+        "build_event": true, 
+        "coach": "Bahar", 
+        "kids": [
+            "Harsha", 
+            "Darsh"
+        ]
+    }, 
+    "Towers": {
+        "build_event": true, 
+        "coach": "Kash", 
+        "kids": [
+            "Brandon", 
+            "Vivek", 
+            "David B.", 
+            "Archit", 
+            "Ellie", 
+            "Darion"
+        ]
+    }, 
+    "Wind Power": {
+        "build_event": true, 
+        "coach": "Venkat", 
+        "kids": [
+            "Vivek", 
+            "Brandon", 
+            "Scott", 
+            "Rahul", 
+            "Sandeep"
+        ]
+    }, 
+    "Wright Stuff": {
+        "build_event": true, 
+        "coach": null, 
+        "kids": [
+            "Rahul", 
+            "Ceci"
+        ]
+    }, 
+    "Write It Do It": {
+        "build_event": true, 
+        "coach": null, 
+        "kids": [
+            "Michelle", 
+            "Brandon", 
+            "Corbin", 
+            "Siddu", 
+            "Darion", 
+            "Ellie"
+        ]
+    }
+}
