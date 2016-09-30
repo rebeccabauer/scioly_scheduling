@@ -3,16 +3,16 @@ import json
 from schedule_components import Event
 
 
-def events_from_dict(event_dict):
+def events_from_dicts(event_info_list):
     """
-    Create a list of events from a dict of event info
+    Create a list of events from a list of dicts of event info
     """
     all_events = []
-    for key, value in event_dict.iteritems():
-        all_events.append(Event(name=key,
-                                kids=value['kids'],
-                                coach=value['coach'],
-                                hs=True))
+    for event_info in event_info_list:
+        all_events.append(Event(name=event_info['name'],
+                                kids=event_info['kids'],
+                                coach=event_info['coach'],
+                                hs=event_info['hs']))
     return all_events
 
 
@@ -22,8 +22,8 @@ def events_from_json(filename):
     TODO: Incorporate whether an event is marked as B or C
     """
     with open(filename) as ifile:
-        event_dict = json.load(ifile)
-    return events_from_dict(event_dict)
+        event_dicts = json.load(ifile)
+    return events_from_dicts(event_dicts)
 
 
 def events_from_csv(filename):
@@ -47,12 +47,12 @@ def events_from_csv(filename):
     return all_events
 
 
-def events_from_mattheroni(filename):
+def event_info_from_mattheroni(filename):
     """
     Load events from Matthew's old custom file format
     TODO: Incorporate whether an event is marked as B or C into the events produced
     """
-    event_dict = {}
+    event_info_list = []
     with open(filename) as fh:
         for line in fh:
             line = line.rstrip()
@@ -67,7 +67,7 @@ def events_from_mattheroni(filename):
             spl = line.split(';')
 
             build = spl[0][0] == '!'
-            event = spl[0][1:]
+            name = spl[0][1:]
 
             people = spl[1].split(',')
             coach = people.pop(-1)
@@ -75,13 +75,41 @@ def events_from_mattheroni(filename):
                 coach = None
             kids = people
 
-            event_dict[event] = {
+            # Divide into B/C events. WARNING: FOR TESTING PURPOSES ONLY - THIS IS NOT ACCURATE
+            if len(kids) > 3:
+                divider = int(len(kids)/2)
+                event_info_list.append({
+                    'name': name,
+                    'build_event': build,
+                    'coach': coach,
+                    'kids': kids[:divider],
+                    'hs': True
+                })
+                kids = kids[divider:]
+
+            event_info_list.append({
+                'name': name,
                 'build_event': build,
                 'coach': coach,
-                'kids': kids
-            }
+                'kids': kids,
+                'hs': False
+            })
 
-    return events_from_dict(event_dict)
+    return event_info_list
+
+
+def events_from_mattheroni(filename):
+    event_info = event_info_from_mattheroni(filename)
+    events = events_from_dicts(event_info)
+    return events
+
+
+def mattheroni_to_json(m_file, output_file):
+    print "loading Matthew-formatted file ..."
+    events = event_info_from_mattheroni(m_file)
+    with open(output_file, 'wb') as outfile:
+        json.dump(events, outfile, indent=4)
+    print "jsonified version of {} saved as {}".format(m_file, output_file)
 
 
 def load_events(filename):

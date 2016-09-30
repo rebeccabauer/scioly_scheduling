@@ -14,29 +14,44 @@ class ScheduleGroup(object):
         self.mpq = Queue.PriorityQueue()
         self.max_size = max_size
         self.initial_threshold = initial_threshold
+        self.threshold = initial_threshold
+
+    def remove_largest_element(self):
+        largest = self.mpq.get()
+        self.update_threshold()
+        return largest
 
     def put(self, schedule):
         """
         Add a schedule to the ScheduleGroup
         """
+        schedule_conflict = schedule.total_conflict()
+
+        # Don't add the new schedule if the mpq is full and it's conflict is already at the threshold
+        if self.threshold <= schedule_conflict and self.mpq.qsize() == self.max_size:
+            return
+
         sch = schedule.copy()   # Make a shallow copy so that the schedule's events are not later rearranged
-        mpq_item = (-1*schedule.total_conflict(), sch)     # multiply conflict by -1 so that the highest-conflict items will be removed first
+        mpq_item = (-1*schedule_conflict, sch)     # multiply conflict by -1 so that the highest-conflict items will be removed first
         self.mpq.put(mpq_item)
 
         # remove an element if there are now too many
         if self.mpq.qsize() > self.max_size:
             self.mpq.get()
 
-    def threshold(self):
+        self.update_threshold()     # update the threshold
+
+    def update_threshold(self):
         """
-        Return the max conflict threshold for being included in this group
+        Updates the max conflict threshold for being included in this group
         This threshold is the max conflict of any schedule in the ScheduleGroup
         """
-        if self.mpq.empty():
-            return self.initial_threshold
         sch = self.mpq.get()
         self.mpq.put(sch)
-        return -1*sch[0]
+        new_threshold = -1*sch[0]
+        if new_threshold < self.threshold:
+            print "New Threshold: {}".format(new_threshold)
+            self.threshold = new_threshold
 
     def schedule_list(self):
         """
@@ -56,7 +71,7 @@ class ScheduleGroup(object):
         :param folder: the folder to save in
         """
         schedule_list = self.schedule_list()
-        fieldnames = ['Event Name', 'Coach', 'Students']
+        fieldnames = ['Event Name', 'B/C', 'Coach', 'Students']
         print "Writing output to file ..."
         for index, schedule in enumerate(schedule_list):
             filename = '{}_option{}.csv'.format(basename, index)
@@ -80,7 +95,8 @@ class ScheduleGroup(object):
                     writer.writerow([])
                     writer.writerow(fieldnames)
                     for event in shift.events:
-                        writer.writerow([event.name, event.coach, ', '.join(event.kids)])   # Print schedule
+                        b_or_c = 'C' if event.hs else 'B'
+                        writer.writerow([event.name, event.coach, b_or_c, ', '.join(event.kids)])   # Print schedule
                     writer.writerow([])
             print "Finished writing file {}".format(filename)
 
@@ -99,7 +115,7 @@ def minimize_conflict(schedule, num_results=constants.NUM_SCHEDULE_OPTIONS):
 
     def recurse():
         # Base cases
-        if schedule.total_conflict() > best_groupings.threshold():
+        if schedule.total_conflict() > best_groupings.threshold:
             return
         if schedule.scheduled_events() == schedule.total_events():
             best_groupings.put(schedule)

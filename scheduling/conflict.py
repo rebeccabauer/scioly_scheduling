@@ -21,10 +21,10 @@ class ConflictTable(object):
         # Create numpy matrices to hold various kinds of conflict info
         self.common_kids = np.empty(matrix_dimensions, dtype=object)        # stores sets of kids with conflicts
         self.common_coaches = np.empty(matrix_dimensions, dtype=object)     # Stores coaches if they have conflicts
-        self.kid_conflict_scores = np.full(matrix_dimensions, 0)            # Stores conflict scores based on only the kid conflicts (before multiplying by KID_CONFLICT_FACTOR)
-        self.coach_conflict_scores = np.full(matrix_dimensions, 0)          # Stores conflict scores based on only coach conflicts (before multiplying by COACH_CONFLICT_FACTOR)
-        self.ms_hs_pairs = np.full(matrix_dimensions, 0)                    # If the event pair is corresponding B/C events, this matrix holds a 1.  Otherwise 0.
-        self.conflict_scores = np.full(matrix_dimensions, 0)                # Stores resulting conflict scores for every pair of events
+        self.kid_conflict_scores = np.full(matrix_dimensions, 0.0)            # Stores conflict scores based on only the kid conflicts (before multiplying by KID_CONFLICT_FACTOR)
+        self.coach_conflict_scores = np.full(matrix_dimensions, 0.0)          # Stores conflict scores based on only coach conflicts (before multiplying by COACH_CONFLICT_FACTOR)
+        self.ms_hs_pairs = np.full(matrix_dimensions, 0.0)                    # If the event pair is corresponding B/C events, this matrix holds a 1.  Otherwise 0.
+        self.conflict_scores = np.full(matrix_dimensions, 0.0)                # Stores resulting conflict scores for every pair of events
 
         self._fill_conflict_matrices(event_array)
 

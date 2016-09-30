@@ -1,78 +1,95 @@
 Option 4
-Conflict Score:,5.9000000000000004
+Conflict Score:,0.40000000000000357
 
 ...
 Shift 0:
 Conflict Summary:
 Student Conflicts,Coach Conflicts,Total
-0,1,1
+1,0,1
 
-Students with conflicts:
-Coaches with conflicts:,Gill
+Students with conflicts:,Lauren
+Coaches with conflicts:
 
-Event Name,Coach,Students
-Experimental Design,Jim,"Nikolai, Melissa, Emily, Alex, Harsha, Jessica"
-Towers,Kash,"Brandon, Vivek, David B., Archit, Ellie, Darion"
-Microbe Mission,Steve,"Lauren, Ameen, Nikesh, Siddu, Ceci, Aayan"
-Dynamic Planet,Gill,"David S., Ian, Alexander, Luke, Sandeep"
-Optics,Bruno,"Matt, Jay, Corbin, Nikita, Derek"
-Hydrogeology,Gill,"Michelle, Bella"
+Event Name,B/C,Coach,Students
+Experimental Design,Jim,C,"Nikolai, Melissa, Emily"
+Experimental Design,Jim,B,"Alex, Harsha, Jessica"
+Forensics,,B,"Julia, Lauren, Emhyr"
+Towers,Kash,C,"Brandon, Vivek, David B."
+Towers,Kash,B,"Archit, Ellie, Darion"
+Wind Power,Venkat,B,"Scott, Rahul, Sandeep"
+Microbe Mission,Steve,C,"Lauren, Ameen, Nikesh"
+Microbe Mission,Steve,B,"Siddu, Ceci, Aayan"
+Optics,Bruno,B,"Corbin, Nikita, Derek"
+Astronomy,Gill,B,"Bella, Matt"
+Material Science,David Leitner,C,"Ian, Michelle"
+Meteorology,Bahar,B,"Luke, Darsh"
 
 ...
 Shift 1:
 Conflict Summary:
 Student Conflicts,Coach Conflicts,Total
-1,0,1
+0,0,0
 
-Students with conflicts:,Corbin
+Students with conflicts:
 Coaches with conflicts:
 
-Event Name,Coach,Students
-Write It Do It,,"Michelle, Brandon, Corbin, Siddu, Darion, Ellie"
-Rocks and Minerals,Charlene,"Ameen, Jay, Scott, Corbin, Sandeep, Alex"
-Ecology,Usha,"Melissa, Bella, Nikesh, Alexander, Jessica, Nikita"
-Helicopters,,"Nikolai, Ian, David B."
-Forensics,,"Julia, Lauren, Emhyr"
-Wright Stuff,,"Rahul, Ceci"
-Scrambler,Bahar,"Harsha, Darsh"
-Remote Sensing,Gill,"Matt, David S."
+Event Name,B/C,Coach,Students
+Helicopters,,B,"Nikolai, Ian, David B."
+Chem Lab,David Leitner,C,"Ameen, Melissa"
+Chem Lab,David Leitner,B,"Alexander, Siddu"
+Robot Arm,Jim,C,"David S., Julia"
+Robot Arm,Jim,B,"Scott, Archit"
+Wind Power,Venkat,C,"Vivek, Brandon"
+Bottle Rocket,Kash,B,"Darion, Harsha"
+Wright Stuff,,B,"Rahul, Ceci"
+Anatomy and Physiology,Usha,B,"Nikesh, Derek, Nikita"
+Rocks and Minerals,Charlene,B,"Corbin, Sandeep, Alex"
+Hydrogeology,Gill,B,"Michelle, Bella"
+Optics,Bruno,C,"Matt, Jay"
+Fast Facts,Media,B,"Elyse, Jessica"
 
 ...
 Shift 2:
 Conflict Summary:
 Student Conflicts,Coach Conflicts,Total
-1,0,1
+1,1,2
 
-Students with conflicts:,Scott
-Coaches with conflicts:
+Students with conflicts:,Matt
+Coaches with conflicts:,Gill
 
-Event Name,Coach,Students
-Wind Power,Venkat,"Vivek, Brandon, Scott, Rahul, Sandeep"
-Anatomy and Physiology,Usha,"Emily, Melissa, Alexander, Nikesh, Derek, Nikita"
-Robot Arm,Jim,"David S., Julia, Scott, Archit"
-Material Science,David Leitner,"Ian, Michelle, Emhyr, David B."
-Bottle Rocket,Kash,"Darion, Harsha"
-Fast Facts,Media,"Elyse, Jessica"
-Astronomy,Gill,"Bella, Matt"
-Meteorology,Bahar,"Luke, Darsh"
+Event Name,B/C,Coach,Students
+Write It Do It,,C,"Michelle, Brandon, Corbin"
+Write It Do It,,B,"Siddu, Darion, Ellie"
+Electric Vehicle,Jim,C,"Matt, Vivek"
+Electric Vehicle,Jim,B,"Nikesh, Archit"
+Mission Possible,Venkat,B,"Rahul, Sandeep"
+Anatomy and Physiology,Usha,C,"Emily, Melissa, Alexander"
+Hovercraft,,B,"Julia, Alex, Darsh"
+Rocks and Minerals,Charlene,C,"Ameen, Jay, Scott"
+Material Science,David Leitner,B,"Emhyr, David B."
+Remote Sensing,Gill,B,"Matt, David S."
+Road Scholar,Gill,B,"Nikita, Elyse"
 
 ...
 Shift 3:
 Conflict Summary:
 Student Conflicts,Coach Conflicts,Total
-3,0,3
+1,0,1
 
-Students with conflicts:,Siddu,Archit,Julia
+Students with conflicts:,Alexander
 Coaches with conflicts:
 
-Event Name,Coach,Students
-Disease Detectives,Charlene,"Jay, Emily, Siddu, Scott, Aayan, Ceci"
-Electric Vehicle,Jim,"Matt, Vivek, Nikesh, Archit"
-Game On,,"Julia, Nikolai, Corbin, David B."
-Chem Lab,David Leitner,"Ameen, Melissa, Alexander, Siddu"
-Invasive Species,Laxmikanta,"Michelle, Lauren, Archit, Emhyr"
-Mission Possible,Venkat,"Rahul, Sandeep"
-Hovercraft,,"Julia, Alex, Darsh"
-Road Scholar,Gill,"Nikita, Elyse"
-Food Science,Media,"Derek, Darion"
+Event Name,B/C,Coach,Students
+Game On,,C,"Julia, Nikolai"
+Game On,,B,"Corbin, David B."
+Scrambler,Bahar,B,"Harsha, Darsh"
+Disease Detectives,Charlene,C,"Jay, Emily, Siddu"
+Disease Detectives,Charlene,B,"Scott, Aayan, Ceci"
+Dynamic Planet,Gill,B,"Alexander, Luke, Sandeep"
+Ecology,Usha,C,"Melissa, Bella, Nikesh"
+Ecology,Usha,B,"Alexander, Jessica, Nikita"
+Dynamic Planet,Gill,C,"David S., Ian"
+Invasive Species,Laxmikanta,C,"Michelle, Lauren"
+Invasive Species,Laxmikanta,B,"Archit, Emhyr"
+Food Science,Media,B,"Derek, Darion"
 

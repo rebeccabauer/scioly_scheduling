@@ -1,14 +1,14 @@
 import scheduling
 import os
+import json
 
 # Create file names
-input_file = 'scioly_assignments.json'
+input_file = 'sample_event_info.json'
 input_folder = 'input'
 filename = os.path.join(input_folder, input_file)
 
 output_folder = 'output'
 base_output_name = 'test'
-
 
 # Load scioly info from file
 events = scheduling.load_events(filename)

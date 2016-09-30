@@ -84,9 +84,7 @@ class Shift(object):
             cfsum = 0
             for ev in self.events:
                 cf = self.conf_table.get_conflict_score(ev, event)
-                # add to list of conflicts if a non-zero conflict value is returned
-                if cf > 0:
-                    cfsum += cf
+                cfsum += cf
             self.conflict_sum += cfsum
             self.events.append(event)
             self.conflict_values.append(cfsum)
@@ -108,8 +106,7 @@ class Shift(object):
         cfsum = 0
         for ev in self.events:
             cf = self.conf_table.get_conflict_score(ev, event)
-            if cf > 0:
-                cfsum += cf
+            cfsum += cf
         return cfsum
 
     def calculate_conflict_sum(self):

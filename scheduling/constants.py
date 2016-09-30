@@ -10,7 +10,7 @@ COACH_CONFLICT_FACTOR = 0.9
 # This is a bonus for HS and MS events that take place at the same time
 # It is negative to in order to give these event pairs very low conflict values
 # The more negative this value, the larger the benefit for MS and HS events to run simultaneously
-SIMULTENAITY_BONUS = -1
+SIMULTENAITY_BONUS = -0.25
 
 # List of build events.  Events in this list will be assigned higher priority for meeting without conflicts.
 BUILD_EVENTS = ["Bottle Rocket", "Chem Lab", "Electric Vehicle", "Experimental Design",
@@ -27,8 +27,9 @@ CUSTOM_CONFLICT_FACTORS = {
     "Ian": 0.7
 }
 
+
 # Number of top schedule options to be returned
 # Each of the schedule options will be printed to a different csv file
-NUM_SCHEDULE_OPTIONS = 10
+NUM_SCHEDULE_OPTIONS = 5
 
 
